@@ -24,7 +24,7 @@ defmodule Intake do
   end
 
   def parse_document(document) do
-    split = String.split(document[:body], " ", trim: true)
+    split = SearchHelper.tokenize(document[:body])
     split |> Enum.group_by(fn word -> word end)
           |> Enum.map(fn {word, values} ->
                 %{word => [%{id: document[:id], cnt: Enum.count(values)}] }
