@@ -1,6 +1,6 @@
 # Inversia
 ### WIP
-Inversia is an inverted index for Elixir.  For the time being, it is a record-level inverted index rather than a word-level.  This may change in the future.  
+Inversia is an inverted index for Elixir.  For the time being, it is a record-level inverted index rather than a word-level -- similar to a basic Lucene.  This may change in the future.  
 
 ## Installation
 
